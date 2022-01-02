@@ -37,18 +37,20 @@
         <option value="sandybrown">brown</option>
         <option value="powderblue">blue</option>
       </select>
-    <label for="Title">Title</label>
-    <input type="text" id="title" n
-    <input type="datetime-local" id="deadline" name="deadline" placeholder="deadline.." > 
-    <label>{{this.deadline}}</label>
-    <br/>
-    <input type="hidden" name="Idtable" value="{{this._id}}">
-    <input type="submit" value="Submit">ame="title" placeholder="Title" value="{{this.title}}">
+  <label for="Title">Title</label>
+    <input type="text" id="title" name="title" placeholder="Title" value="{{this.title}}">
     <br/>
     <label for="Description">Description</label>
     <textarea type="text" id="description" name="description" placeholder="Description.." >{{this.description}}</textarea>
     <br/>
     <label for="Description">Deadline</label>
+    <input type="datetime-local" id="deadline" name="deadline" placeholder="deadline.." > 
+    <label>{{this.deadline}}</label>
+    <br/>
+    <input type="hidden" name="Idtable" value="{{this._id}}">
+    <input type="submit" value="Submit">
+    <br/>
+    
   </form>
 </div>
     {{/each}}
